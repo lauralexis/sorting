@@ -8,6 +8,9 @@ describe('Bubble Sort', function(){
     it('handles an array', function(){
         expect( bubbleSort([9, 5, 8, 4, 2]) ).toEqual([2, 4, 5, 8, 9]);
     });
+    it('handles an array of two equal values', function(){
+        expect( bubbleSort([2,2]) ).toEqual([2,2]);
+    });
 });
 
 //keep track of comapres and swaps 
